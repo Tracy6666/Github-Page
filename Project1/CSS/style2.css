@@ -1,0 +1,69 @@
+@import 'box.css';
+.container {
+    display: grid;
+    grid-template-areas: "hd" "nav" "sd" "main";
+}
+
+@media (min-width:901px) {
+    .container {
+        display: grid;
+        grid-template-rows: 30% 10% 80%;
+        grid-template-areas: "hd hd hd hd hd " "nav nav nav nav nav " "sd sd main main main ";
+    }
+}
+
+.header {
+    grid-area: hd;
+    background-size: cover;
+    color: palevioletred;
+    text-align: center;
+    font-size: 220%;
+}
+
+.main-nav {
+    grid-area: nav;
+    background-color: paleturquoise;
+    border: 2px solid rgb(28, 227, 241);
+    border-style: dashed;
+    border-radius: 5px;
+    margin: 1%;
+}
+
+.sidebar {
+    grid-area: sd;
+}
+
+.content {
+    grid-area: main;
+}
+
+.text {
+    font-size: 20px;
+    text-align: left;
+    font-style: italic;
+    padding: 5%;
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+    border: 3px solid palevioletred;
+    border-style: dashed;
+    border-radius: 5px;
+    height: 80%;
+    padding: 2%;
+    margin: 10%;
+    overflow: auto;
+}
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+    overflow: auto;
+}
+
+.textbox {
+    max-width: 80%;
+    text-align: center;
+    overflow: auto;
+}

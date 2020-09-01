@@ -1,0 +1,8 @@
+.main-nav {
+    grid-area: nav;
+    background-color: paleturquoise;
+    border: 2px solid rgb(28, 227, 241);
+    border-style: dashed;
+    border-radius: 5px;
+    margin: 1%;
+}

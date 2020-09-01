@@ -1,0 +1,8 @@
+.box {
+    border: 3px solid rgb(79, 109, 243);
+    border-radius: 5px;
+    border-style: dashed;
+    background: rgb(255, 255, 142);
+    margin: 1%;
+    overflow: auto;
+}
